@@ -66,7 +66,7 @@
 	<section id="about" class="container-fluid min-vh-100 pt-5">
 		<h2 id="headers-color" class="text-center pb-3">About <span>M</span>e</h2>
 		<div class="row justify-content-around">
-			<div id="content-bg" class="col-12 order-2 order-md-1 col-md-4">
+			<div id="content-bg" class="col-12 order-2 order-md-2 order-lg-1 col-lg-4">
 				<p class="text-center pt-3">I'm Ariel and I'm a Full-stack Web Developer. I have a passion for building and designing user-friendly website. I can do frond-end designs using HTML, CSS, and Javascript. Proficient in MERN stack technology. With a lot of practice and building my own projects I can definitly say that I'm capable in working in tech companies.</p>
 				<div class="row">
 					<div class="col-3">
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 order-1 order-md-2 col-md-4">
+			<div class="col-12 order-1 order-md-1 order-lg-2 col-lg-4">
 				<img class="img-fluid rounded-circle" src="./images/aboutMe.jpg">
 			</div>
 		</div>
@@ -103,7 +103,7 @@
 
 		<div class="row justify-content-around">
 
-			<div class="col-md-6 d-none d-md-block">
+			<div class="col-md-6 d-none d-sm-block">
 				<!-- Core Tools Section Start -->
 				<h3 id="headers-color" class="text-center p-5">Core <span>T</span>ools</h3>
 
@@ -180,44 +180,89 @@
 	<!-- Project Section Start -->
 	<section id="projects" class="container-fluid min-vh-100 pt-5">
 		<h2 id="headers-color" class="text-center pt-5 pb-5">My <span>P</span>rojects</h2>
-		<div class="d-md-flex justify-content-around">
-			<div class="col-md-4 text-center">
-				<img class="img-fluid" src="images/p1.png">
-				<h4>Porfolio</h4>
+		<div class="d-lg-flex justify-content-around">
+			<div class="col-12 col-lg-3 text-center bg-primary">
+				<img class="img-fluid pt-3" src="images/p1.png">
+				<h4 class="pt-3"><span>P</span>orfolio</h4>
 				<p>Created simple but responsive portfolio using HTML, CSS, and Bootstrap.</p>
 			</div>
-			<div class="col-md-4 text-center">
-				<img class="img-fluid" src="images/p1.png">
-				<h4>YelpCamp</h4>
-				<p>Created using MongoDB as database and expressJS as backend framework.</p>
+			<div class="col-12 col-lg-3 text-center bg-primary">
+				<img class="img-fluid pt-3" src="images/p2.png">
+				<h4>Yelp<span>C</span>amp</h4>
+				<p>Created using MongoDB as database, Express JS as backend framework and Node JS Server .</p>
 			</div>
-			<div class="col-md-4 text-center">
-				<img class="img-fluid" src="images/p1.png">
-				<h4>Porfolio</h4>
-				<p>Created simple portfolio using HTML, CSS, and Bootstrap.</p>
+			<div class="col-12 col-lg-3 text-center bg-primary">
+				<img class="img-fluid pt-3" src="images/p3.png">
+				<h4 class="pt-3">Museum of <span>C</span>andy</h4>
+				<p>Created a responsive museum using HTML, Bootstrap, and Javascript.</p>
 			</div>
 		</div>
 	</section>
 	<!-- Project Section End -->
 
-	<section id="contact" class="container vh-100">
-		<h2>Contact <span>M</span>e</h2>
-		<div class="row">
-			<div class="col-6">
-				<div>
-					<p>&#9993;  Email</p>
-					<p>&#128222 Phone Number</p>
-					<a href="http://www.facebook.com/ariel.manalim">&#9429;</a>
+	<!-- Contact Section Start -->
+	<section id="contact" class="container-fluid min-vh-100 pt-5">
+		<h2 id="headers-color" class="pt-5 pb-5 text-center">Contact <span>M</span>e</h2>
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-5 order-2 order-lg-1 offset-lg-2 pt-5">
+				<h4 class="bi bi-envelope-fill">   arielmanalim2022@gmail.com</h4>
+				<h4 class="bi bi-telephone-forward-fill">   +63 955 037 4515</h4>
+				<h4 class="bi bi-telegram">   @ayei07</h4>
+				<div class="d-lg-flex">
+					<a class="bi bi-facebook" href="https://www.facebook.com/ariel.manalim"></a>
+					<a class="bi bi-linkedin pl-5 pr-5" href="https://www.linkedin.com/in/arielmanalim"></a>
+					<a class="bi bi-instagram" href="https://www.instagram.com/manalim.ariel/"></a>
 				</div>
 			</div>
-			<div class="col-6">
-				<form class="row">
-					<input class="col-6" type="text" name="name" id="name" placeholder="Your Name" width="100" autocomplete>
-					<input class="col-6" type="email" name="email" placeholder="Your Email" autocomplete>
+			<!-- Contact Form Section Start -->
+			<div class="col-12 col-lg-5 p-5 order-1 order-lg-2">
+				<form class="bg-primary p-3 rounded">
+					<div class="form-group">
+						<input type="text" class="form-control" id="name" placeholder="Your Name">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" id="message" rows="7" placeholder="Send me a message..."></textarea>
+					</div>
+					<button type="submit" data-toggle="modal" data-target="#exampleModal">Send Email</button>
 				</form>
+
 			</div>
-		</div>
+			<!-- Contact Form Section End -->
+
+			<!-- Modal Start -->
+			<div>
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title text-dark">Message Successfully Sent!</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Thank you for contacting me!</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal Start -->
+		</div>	
 	</section>
+	<!-- Contact Section End -->
+
+	<!-- Start of Footer -->
+	<footer>
+		<div class="text center text-light bg-dark bi bi-c-circle text-center p-3">2022 Copyright. All Rights Reserved</div>
+	</footer>
+	<!-- End of Footer -->
 
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
